@@ -1,5 +1,19 @@
 from students import students
 
+
+def grade(mark):
+    if mark >= 90:
+        return "A"
+    elif mark >= 80:
+        return "B"
+    elif mark >= 70:
+        return "C"
+    elif mark >= 60:
+        return "D"
+    else:
+        return "F"
+
+
 name = input("Enter student name: ")
 
 if name.strip() == "":
@@ -16,20 +30,9 @@ else:
             print("Enrollment:", student["enrollment"])
             print("Marks:", student["marks"])
             print("Average:", average)
+            print("Grade:", grade(average))
 
             found = True
 
     if not found:
         print("Student not found")
-
-    def grade(mark):
-        if mark >= 90:
-            return "A"
-        elif mark >= 80:
-            return "B"
-        elif mark >= 70:
-            return "C"
-        elif mark >= 60:
-            return "D"
-        else:
-            return "F"
