@@ -15,8 +15,7 @@ else:
             print("Name:", student["name"])
             print("Enrollment:", student["enrollment"])
             print("Marks:", student["marks"])
-            print("Average:", average)
-
+            print("Average Marks:", average)
             found = True
 
     if not found:
